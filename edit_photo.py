@@ -36,7 +36,7 @@ def main():
 
     # 在这儿选择生成器
     tflib.init_tf()
-    with open('networks/generator_yellow-stylegan2-config-f.pkl', "rb") as f:
+    with open('networks/stylegan2-ffhq-1024x1024.pkl', "rb") as f:
         generator_network, discriminator_network, Gs_network = pickle.load(f)
 
     # 这是一些配置参数，不要动它
@@ -79,7 +79,7 @@ def main():
         smile.npy - 调整笑容
         width.npy - 调整脸的宽度
     '''
-    direction_file = 'smile.npy'  # 从上面的编辑向量中选择一个
+    direction_file = 'race_black.npy'  # 从上面的编辑向量中选择一个
 
     # 在这儿选择调整的大小，向量里面的值表示调整幅度，可以自行编辑，对于每个值都会生成一张图片并保存。
     coeffs = [-15., -12., -9., -6., -3., 0., 3., 6., 9., 12.]

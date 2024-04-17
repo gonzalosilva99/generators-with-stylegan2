@@ -46,7 +46,7 @@ def main():
     os.makedirs('results/', exist_ok=True)
     os.makedirs('results/generate_codes/', exist_ok=True)
 
-    network_pkl = 'networks/generator_yellow-stylegan2-config-f.pkl'  # 模型位置
+    network_pkl = 'networks/stylegan2-ffhq-1024x1024.pkl'  # 模型位置
     generate_num = 20  # 生成数量
 
     generate_images(network_pkl, generate_num)
